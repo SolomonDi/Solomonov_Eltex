@@ -1,0 +1,242 @@
+eltex-pg2-v11@eltex-2026-spring:~$ export TERM=dumb
+eltex-pg2-v11@eltex-2026-spring:~$ unalias ls
+eltex-pg2-v11@eltex-2026-spring:~$ PS1='$ '
+$ ls
+ls           lsblk        lscpu        lsinitramfs  lsirq        lslogins     lsmod        lsof         lsusb
+lsattr       lsb_release  lsfd         lsipc        lslocks      lsmem        lsns         lspci        
+$ $HIST
+$ HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE      
+$ echo $HISTSIZEFILE
+2000
+$ ls -d ~/.*
+/home/eltex-pg2-v11/.bash_history  /home/eltex-pg2-v11/.config	 /home/eltex-pg2-v11/.viminfo
+/home/eltex-pg2-v11/.bash_logout   /home/eltex-pg2-v11/.log
+/home/eltex-pg2-v11/.bashrc	   /home/eltex-pg2-v11/.profile
+$ export HISTTIMEFORMAT="%d.%m.%y %H:%M:%S"
+$ history
+    1  12.03.26 01:08:09 clear
+    2  12.03.26 01:08:09 screen 
+    3  12.03.26 01:08:09 screen -r
+    4  12.03.26 01:08:09 screen -r 175133.pts-98.eltex-2026-spring
+    5  12.03.26 01:08:09 screen -r
+    6  12.03.26 01:08:09 screen -r 175133.pts-98.eltex-2026-spring
+    7  12.03.26 01:08:09 screen -r
+    8  12.03.26 01:08:09 screen -r 175133.top
+    9  12.03.26 01:08:09 screen -r Solomon
+   10  12.03.26 01:08:09 vi report_part1.txt
+   11  12.03.26 01:08:09 screen -r
+   12  12.03.26 01:08:09 screen -r 172723.Solomon
+   13  12.03.26 01:08:09 d
+   14  12.03.26 01:08:09 screen -r 175133.Solomon
+   15  12.03.26 01:08:09 screen -r 172723.Solomon
+   16  12.03.26 01:08:09 d
+   17  12.03.26 01:08:09 screen -r
+   18  12.03.26 01:08:09 screen -d 172723.Solomon
+   19  12.03.26 01:08:09 screen -r 172723.Solomon
+   20  12.03.26 01:08:09 screen -ls
+   21  12.03.26 01:08:09 logout
+   22  12.03.26 01:08:09 screen -ls
+   23  12.03.26 01:08:09 screen -S 175133 -X quit
+   24  12.03.26 01:08:09 screen -S screen -S 347953 -X quit
+   25  12.03.26 01:08:09 screen -ls
+   26  12.03.26 01:08:09 w
+   27  12.03.26 01:08:09 top
+   28  12.03.26 01:08:09 watch/usr/bin/vmstat
+   29  12.03.26 01:08:09 watch /usr/bin/vmstat
+   30  12.03.26 01:08:09 screen -ls
+   31  12.03.26 01:08:09 vi report_part1.txt
+   32  12.03.26 01:08:09 w
+   33  12.03.26 01:08:09 screen -S Solomon
+   34  12.03.26 01:08:09 screen -ls
+   35  12.03.26 01:08:09 screen -r 172723.Solomon
+   36  12.03.26 01:08:09 screen -ls
+   37  12.03.26 01:08:09 screen -S 175133.top
+   38  12.03.26 01:08:09 screen -ls
+   39  12.03.26 01:08:09 screen -S 347953 -X quit
+   40  12.03.26 01:08:09 screen -ls
+   41  12.03.26 01:08:09 screen -S 175133 -X quit
+   42  12.03.26 01:08:09 screen -ls
+   43  12.03.26 01:08:09 screen -S 172723 -X quit
+   44  12.03.26 01:08:09 screen -ls
+   45  12.03.26 01:08:09 screen -S 167093 -X quit
+   46  12.03.26 01:08:09 screen -ls
+   47  12.03.26 01:08:09 screen -r
+   48  12.03.26 01:08:09 screen -ls
+   49  12.03.26 01:08:09 screen -r
+   50  12.03.26 01:08:09 logout
+   51  12.03.26 01:08:09 screen -ls
+   52  12.03.26 01:08:09 export TERM=dumb
+   53  12.03.26 01:08:09 ls
+   54  12.03.26 01:08:09 echo $HISTFILESIZE
+   55  12.03.26 01:08:09 ls -d ~/.*
+   56  12.03.26 01:08:09 grep -P "\e\[" "${USER}_part.log"
+   57  12.03.26 01:08:09 ls -d --color=none ~/.*
+   58  12.03.26 01:08:09 cat -v "${USER}_part.log"
+   59  12.03.26 01:08:09 cat -v "{USER}_part.log"
+   60  12.03.26 01:08:09 cat -v "${USER}_part.log"
+   61  12.03.26 01:08:09 exit
+   62  12.03.26 01:08:09 export TERM=dumb
+   63  12.03.26 01:08:09 stty erase 
+   64  12.03.26 01:08:09 unalias ls 2>/dev/null
+   65  12.03.26 01:08:09 ls -s
+   66  12.03.26 01:08:09 cat -v $USER_part.log
+   67  12.03.26 01:08:09 exit
+   68  12.03.26 01:08:09 screen -ls
+   69  12.03.26 01:08:09 screen -r
+   70  12.03.26 01:08:09 TERM=dumb screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   71  12.03.26 01:08:09~TERM=dumb screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   72  12.03.26 01:08:09 screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   73  12.03.26 01:08:09 bind 'set enable-bracketed-paste off'
+   74  12.03.26 01:08:09 # 
+   75  12.03.26 01:08:09 bind 'set enable-bracketed-paste off'
+   76  12.03.26 01:08:09 # 
+   77  12.03.26 01:08:09 export TERM=dumb
+   78  12.03.26 01:08:09 bind 'set enable-bracketed-paste off'
+   79  12.03.26 01:08:09 export TERM=dumb
+   80  12.03.26 01:08:09 screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   81  12.03.26 01:08:09 $HIST
+   82  12.03.26 01:08:09 cat -v $USER_part.log
+   83  12.03.26 01:08:09 exit
+   84  12.03.26 01:08:09 export TERM=dumb
+   85  12.03.26 01:08:09 screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   86  12.03.26 01:08:09 screen -ls
+   87  12.03.26 01:08:09 screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+   88  12.03.26 01:08:09 export TERM=dumb
+   89  12.03.26 01:08:09 echo $HISTFILESIZE
+   90  12.03.26 01:08:09 ls -d ~/.*
+   91  12.03.26 01:08:09 exit
+   92  12.03.26 01:08:09 export TERM=dumb
+   93  12.03.26 01:08:09 unalias ls
+   94  12.03.26 01:08:09 echo $HISTFILESIZE
+   95  12.03.26 01:08:09 ls -d ~/.*
+   96  12.03.26 01:08:09 cat $USER_part.log
+   97  12.03.26 01:08:09 cat -v $USER_part.log
+   98  12.03.26 01:08:09 exit
+   99  12.03.26 01:08:09 export TERM=dumb
+  100  12.03.26 01:08:09 unalias ls 2>/dev/null
+  101  12.03.26 01:08:09 PS1='$ '
+  102  12.03.26 01:08:09 echo $HISTFILESIZE
+  103  12.03.26 01:08:09 ls -d ~/.*
+  104  12.03.26 01:08:09 cat ${USER}_part.log
+  105  12.03.26 01:08:09 exit
+  106  12.03.26 01:08:09 screen -r
+  107  12.03.26 01:08:09 rm ${USER}_part.log
+  108  12.03.26 01:08:09 screen -r
+  109  12.03.26 01:08:09 screen -L -Logfile "${USER}_part.log" -S "$(whoami)_part2"
+  110  12.03.26 01:08:09 exit
+  111  12.03.26 00:49:54 export TERM=dumb
+  112  12.03.26 00:49:54 unalias ls 2>/dev/null
+  113  12.03.26 00:49:54 PS1='$ '
+  114  12.03.26 00:50:48 echo $HISTSIZEFILE
+  115  12.03.26 00:51:16 echo $HISTFILESIZE
+  116  12.03.26 00:51:57 cat ${USER}_part.log
+  117  12.03.26 00:52:51 ls -d /.*
+  118  12.03.26 00:53:05 ls -d ~/.*
+  119  12.03.26 00:54:27 export HISTTIMEFORMAT="%d.%m.%y %H:%M:%S "
+  120  12.03.26 00:54:34 history
+  121  12.03.26 00:57:59 date
+  122  12.03.26 00:59:26 history | tail -n 5
+  123  12.03.26 01:01:36 tail -n 5 ~/.bash_history
+  124  12.03.26 01:04:18 screen -ls
+  125  12.03.26 01:04:25 screen -r
+  126  12.03.26 01:04:35 screen -ls
+  127  12.03.26 01:05:14 screen -d -r eltex-pg2-v11_part2
+  128  12.03.26 01:05:22y
+  129  12.03.26 01:05:24 yes
+  130  12.03.26 01:08:14 export TERM=dumb
+  131  12.03.26 01:08:14 unalias ls
+  132  12.03.26 01:08:14 PS1='$ '
+  133  12.03.26 01:09:02 echo $HISTFILESIZE
+  134  12.03.26 01:09:14 ls -d ~/.*
+  135  12.03.26 01:09:47 export HISTTIMEFORMAT="%d.%m.%y %H:%M:%S"
+  136  12.03.26 01:10:01 history
+$ history | tail -n 5
+  133  12.03.26 01:09:02 echo $HISTFILESIZE
+  134  12.03.26 01:09:14 ls -d ~/.*
+  135  12.03.26 01:09:47 export HISTTIMEFORMAT="%d.%m.%y %H:%M:%S"
+  136  12.03.26 01:10:01 history
+  137  12.03.26 01:10:36 history | tail -n 5
+$  tail -n 5 ~/.bash_history
+screen -d -r eltex-pg2-v11_part2
+#1773252322
+y
+#1773252324
+yes
+$ export PROMPT_COMMAND='history -a'
+$ echo "Hello World"
+Hello World
+$ history | tail -n 3
+  138  12.03.26 01:14:03export PROMPT_COMMAND='history -a'
+  139  12.03.26 01:15:57echo "Hello World"
+  140  12.03.26 01:16:25history | tail -n 3
+$ tail -n 3 ~/.bash_history
+echo "Hello World"
+#1773252985
+history | tail -n 3
+$ DATE=$(date)
+$ echo $DATE
+Thu Mar 12 01:19:30 AM +07 2026
+$ TIME=$(date +"%T")
+$ echo $TIME
+01:22:30
+$ DATE_TIME="$DATE $TIME"
+$ echo $DATE_TIME
+Thu Mar 12 01:19:30 AM +07 2026 01:22:30
+$ ls /bin/*[0-9]*
+/bin/addr2line			/bin/perl5.36-x86_64-linux-gnu	 /bin/x86_64-linux-gnu-gcc-12
+/bin/b2sum			/bin/ping4			 /bin/x86_64-linux-gnu-gcc-ar
+/bin/base32			/bin/ping6			 /bin/x86_64-linux-gnu-gcc-ar-12
+/bin/base64			/bin/pl2pm			 /bin/x86_64-linux-gnu-gcc-nm
+/bin/bunzip2			/bin/pod2html			 /bin/x86_64-linux-gnu-gcc-nm-12
+/bin/bzip2			/bin/pod2man			 /bin/x86_64-linux-gnu-gcc-ranlib
+/bin/bzip2recover		/bin/pod2text			 /bin/x86_64-linux-gnu-gcc-ranlib-12
+/bin/c89			/bin/pod2usage			 /bin/x86_64-linux-gnu-gcov
+/bin/c89-gcc			/bin/py3clean			 /bin/x86_64-linux-gnu-gcov-12
+/bin/c99			/bin/py3compile			 /bin/x86_64-linux-gnu-gcov-dump
+/bin/c99-gcc			/bin/py3versions		 /bin/x86_64-linux-gnu-gcov-dump-12
+/bin/cpan5.36-x86_64-linux-gnu	/bin/pydoc3			 /bin/x86_64-linux-gnu-gcov-tool
+/bin/cpp-12			/bin/pydoc3.11			 /bin/x86_64-linux-gnu-gcov-tool-12
+/bin/diff3			/bin/pygettext3			 /bin/x86_64-linux-gnu-gold
+/bin/enc2xs			/bin/pygettext3.11		 /bin/x86_64-linux-gnu-gp-archive
+/bin/gcc-12			/bin/python3			 /bin/x86_64-linux-gnu-gp-collect-app
+/bin/gcc-ar-12			/bin/python3.11			 /bin/x86_64-linux-gnu-gp-display-html
+/bin/gcc-nm-12			/bin/sha1sum			 /bin/x86_64-linux-gnu-gp-display-src
+/bin/gcc-ranlib-12		/bin/sha224sum			 /bin/x86_64-linux-gnu-gp-display-text
+/bin/gcov-12			/bin/sha256sum			 /bin/x86_64-linux-gnu-gprof
+/bin/gcov-dump-12		/bin/sha384sum			 /bin/x86_64-linux-gnu-gprofng
+/bin/gcov-tool-12		/bin/sha512sum			 /bin/x86_64-linux-gnu-ld
+/bin/grub-menulst2cfg		/bin/ssh-argv0			 /bin/x86_64-linux-gnu-ld.bfd
+/bin/grub-mkpasswd-pbkdf2	/bin/systemd-id128		 /bin/x86_64-linux-gnu-ld.gold
+/bin/grub-syslinux2cfg		/bin/traceroute6		 /bin/x86_64-linux-gnu-lto-dump
+/bin/h2ph			/bin/traceroute6.db		 /bin/x86_64-linux-gnu-lto-dump-12
+/bin/h2xs			/bin/x86_64			 /bin/x86_64-linux-gnu-nm
+/bin/i386			/bin/x86_64-linux-gnu-addr2line  /bin/x86_64-linux-gnu-objcopy
+/bin/linux32			/bin/x86_64-linux-gnu-ar	 /bin/x86_64-linux-gnu-objdump
+/bin/linux64			/bin/x86_64-linux-gnu-as	 /bin/x86_64-linux-gnu-ranlib
+/bin/lto-dump-12		/bin/x86_64-linux-gnu-c++filt	 /bin/x86_64-linux-gnu-readelf
+/bin/md5sum			/bin/x86_64-linux-gnu-cpp	 /bin/x86_64-linux-gnu-size
+/bin/md5sum.textutils		/bin/x86_64-linux-gnu-cpp-12	 /bin/x86_64-linux-gnu-strings
+/bin/pdb3			/bin/x86_64-linux-gnu-dwp	 /bin/x86_64-linux-gnu-strip
+/bin/pdb3.11			/bin/x86_64-linux-gnu-elfedit
+/bin/perl5.36.0			/bin/x86_64-linux-gnu-gcc
+$ ls /sbin/*[0-9]*
+/sbin/dumpe2fs	  /sbin/e2label      /sbin/e2undo     /sbin/fsck.ext3  /sbin/mkfs.ext2	/sbin/tune2fs
+/sbin/e2freefrag  /sbin/e2mmpstatus  /sbin/e4crypt    /sbin/fsck.ext4  /sbin/mkfs.ext3	/sbin/update-grub2
+/sbin/e2fsck	  /sbin/e2scrub      /sbin/e4defrag   /sbin/killall5   /sbin/mkfs.ext4
+/sbin/e2image	  /sbin/e2scrub_all  /sbin/fsck.ext2  /sbin/mke2fs     /sbin/resize2fs
+$ PS1='\u@\h-\t> '
+eltex-pg2-v11@eltex-2026-spring-01:30:38> PS1='\u@\h-$(date +"%H:%M")> '
+eltex-pg2-v11@eltex-2026-spring-01:30> export PS1
+eltex-pg2-v11@eltex-2026-spring-01:34> bash
+eltex-pg2-v11@eltex-2026-spring:~$ exit
+exit
+eltex-pg2-v11@eltex-2026-spring-01:36> bash --norc
+eltex-pg2-v11@eltex-2026-spring-01:37> exit
+exit
+eltex-pg2-v11@eltex-2026-spring-01:38> mkdir -p ~/"$(date +%Y)"-{01..12}
+eltex-pg2-v11@eltex-2026-spring-01:40> ls -d ~/2026-*
+/home/eltex-pg2-v11/2026-01  /home/eltex-pg2-v11/2026-04  /home/eltex-pg2-v11/2026-07  /home/eltex-pg2-v11/2026-10
+/home/eltex-pg2-v11/2026-02  /home/eltex-pg2-v11/2026-05  /home/eltex-pg2-v11/2026-08  /home/eltex-pg2-v11/2026-11
+/home/eltex-pg2-v11/2026-03  /home/eltex-pg2-v11/2026-06  /home/eltex-pg2-v11/2026-09  /home/eltex-pg2-v11/2026-12
+eltex-pg2-v11@eltex-2026-spring-01:41> exit
+exit
