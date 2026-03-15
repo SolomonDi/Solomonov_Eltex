@@ -1,0 +1,74 @@
+
+git config --global user.name "SolomonDi"
+git config --global user.email "solomonovdmitric@gmail.com"
+apt update && apt install git gh
+ssh-keygen -t ed25519 -f ~/.ssh/SolomonDi
+Generating public/private ed25519 key pair.
+/root/.ssh/SolomonDi already exists.
+Overwrite (y/n)? 
+gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/SolomonDi.pub
+? Title for your SSH key: eltex-practice2-pgX-vY
+? How would you like to authenticate GitHub CLI? Login with a web browser
+gh auth setup-git --hostname github.com
+gh auth status
+github.com
+  ✓ Logged in to github.com account SolomonDi (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+gh repo create --public Solomonov_Eltex
+GraphQL: Name already exists on this account (createRepository)
+mkdir ~/Solomon_Eltex && cd ~/Solomon_Eltex
+mkdir ~/Solomon_Eltex && cd ~/Solomon_Eltex
+echo "# Solomon_Eltex repository" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com
+git status
+git push -u origin main
+mkdir -p module1/task1
+mkdir module1/task2
+mkdir module1/task3
+(copying reports via scp...)
+git add .
+git status
+git commit -m "Added modules and tasks"
+git push
+
+mkdir ~/Solomonov_Eltex_clone && cd ~/Solomonov_Eltex_clone
+git clone https://github.com .
+Cloning into '.'...
+fatal: repository 'https://github.com/' not found
+mkdir ~/Solomonov_Eltex_clone && cd ~/Solomonov_Eltex_clone
+git clone https://github.com .
+git clone https://github.com/SolomonDi/Solomonov_Eltex.git 
+git fetch
+From https://github.com/SolomonDi/Solomonov_Eltex
+8727ebd..df11a5d  main       -> origin/main
+git log origin/main -n 1
+commit df11a5d998af8e4ed374dde7275c24c11b5cfdf2
+Author: SolomonDi <solomonovdmitric@gmail.com>
+Date:   Sun Mar 15 12:00:41 2026 +0000
+
+    Update README for sync test
+git diff main origin/main
+diff --git a/README.md b/README.md
+index 4916fa1..cf5d1ed 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # Solomonov_Eltex,Practice №2
+ Added a new line to check the syncronize process
++Testing
+git pull
+Updating 8727ebd..df11a5d
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+mkdir -p module1_lab_2/task1 module1_lab_2/task2 module1_lab_2/task3
