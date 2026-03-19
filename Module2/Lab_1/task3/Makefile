@@ -1,4 +1,17 @@
-TARGET =./calculator.out
+# --- Определение ОС ---
+ifeq ($(findstring Windows,$(OS)),Windows)
+    # Windows
+    TARGET_EXT = .exe
+    RM_CMD = del /Q
+    RUN_CMD = 
+else
+    # Linux / macOS
+    TARGET_EXT = .out
+    RM_CMD = rm -f
+    RUN_CMD = ./
+endif
+
+TARGET = calculator$(TARGET_EXT)
 
 HDRS_DIR = \
 			Lab_1 \
@@ -18,17 +31,7 @@ all: clean build
 build: $(TARGET)
 
 clean:
-		rm -rf $(TARGET)	
+		$(RM_CMD) $(TARGET)	
 
 run: 
-		$(TARGET)	
-
-
-
-
-
-
-
-
-
-
+		$(RUN_CMD)$(TARGET)
