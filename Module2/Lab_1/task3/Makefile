@@ -1,11 +1,11 @@
-# --- Определение ОС ---
+
 ifeq ($(findstring Windows,$(OS)),Windows)
-    # Windows
+   
     TARGET_EXT = .exe
     RM_CMD = del /Q
     RUN_CMD = 
 else
-    # Linux / macOS
+    
     TARGET_EXT = .out
     RM_CMD = rm -f
     RUN_CMD = ./

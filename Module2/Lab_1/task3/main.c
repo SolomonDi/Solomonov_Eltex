@@ -4,7 +4,6 @@
 
 int main(void) {
 
-    Operations oper;
     DataType data_type;
     int countOfNumber = 0;
     int dataTypeChoice = 0;
