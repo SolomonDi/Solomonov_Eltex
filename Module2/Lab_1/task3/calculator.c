@@ -20,11 +20,11 @@ AnyNumber sumInt(int *arg, int count){
 AnyNumber sumDouble(double *arg, int count){
 
     if(count <= 0)
-        return (AnyNumber){INT, .value.d_v = 0};
+        return (AnyNumber){DOUBLE, .value.d_v = 0};
 
     double sum = 0.0;
 
-    for (size_t i = 0; i < count; ++i)
+    for (int i = 0; i < count; ++i)
         sum += arg[i];
 
 
@@ -38,7 +38,7 @@ AnyNumber substInt(int *arg, int count){
 
     int subst = arg[0];
 
-    for (size_t i = 1; i < count; ++i)
+    for (int i = 1; i < count; ++i)
         subst -= arg[i];
 
 
@@ -52,7 +52,7 @@ AnyNumber substDouble(double *arg, int count){
 
     double subst = arg[0];
 
-    for (size_t i = 1; i < count; ++i)
+    for (int i = 1; i < count; ++i)
         subst -= arg[i];
 
     return (AnyNumber){DOUBLE, .value.d_v = subst};
@@ -65,7 +65,7 @@ AnyNumber multInt(int *arg, int count){
 
     int mult = 1;
 
-    for (size_t i = 0; i < count; ++i)
+    for (int i = 0; i < count; ++i)
         mult *= arg[i];
 
     return (AnyNumber){INT, .value.i_v = mult};
@@ -78,7 +78,7 @@ AnyNumber multDouble(double *arg, int count){
 
     double mult = 1.0;
 
-    for (size_t i = 0; i < count; ++i)
+    for (int i = 0; i < count; ++i)
         mult *= arg[i];
    
     return (AnyNumber){DOUBLE, .value.d_v = mult};
@@ -91,7 +91,7 @@ AnyNumber divInt(int *arg, int count){
 
     int div = arg[0];
 
-    for (size_t i = 1; i < count; ++i){
+    for (int i = 1; i < count; ++i){
 
         if(arg[i] == 0){
             return (AnyNumber){INT, .value.i_v = 0};
@@ -110,7 +110,7 @@ AnyNumber divDouble(double *arg, int count){
 
     double div = arg[0];
 
-    for (size_t i = 1; i < count; ++i){
+    for (size_t i = 1; i < count; i++){
 
         if(arg[i] == 0){
             return (AnyNumber){DOUBLE, .value.d_v = 0};

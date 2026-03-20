@@ -34,6 +34,7 @@ int main(void) {
 
     else{
         printf("WRONG DATATYPE \n");
+        continue;
     }
 
     printf("| CHOOSE THE OPERATION: |\n");
@@ -46,7 +47,7 @@ int main(void) {
     scanf(" %d", &operChoice);
 
     Operations operation;
-    if(operChoice >= 0 && operChoice < 4 ){
+    if(operChoice >= 1 && operChoice <= 4 ){
 
         operation = (Operations)(operChoice - 1) ;
         printf("OPERATION CHOOSED: %s\n", getOp(operation));
@@ -61,14 +62,18 @@ int main(void) {
     printf("ENTER HOW MUCH NUMBER YOU WANT OPERATE : ");
     scanf("%d", &countOfNumber);
 
-    if(countOfNumber == 0){
+    if(countOfNumber <= 0){
         printf("WRONG NUMBER OF ARGUMENTS\n");
+        continue;
     }
 
     printf("COUNT OF NUMBERS IS : %d \n ", countOfNumber);
     if(data_type == INT){
 
         int *numbers = malloc(countOfNumber * sizeof(int));
+        if(numbers == NULL){
+            continue;
+        }
 
         for(size_t i = 0; i < countOfNumber; ++i){
             
@@ -86,7 +91,9 @@ int main(void) {
     else{
 
         double *numbers = malloc(countOfNumber * sizeof(double));
-
+        if(numbers == NULL)
+            continue;
+        
         for (size_t i = 0; i < countOfNumber; ++i){
 
             printf(" Number %zu = ", i + 1);
@@ -106,6 +113,7 @@ int main(void) {
 
     } while(runMode != 'n' && runMode != 'N');
 
+    printf("Thanks you for work. Buddy\n");
 
     return 0;
 
